@@ -1,616 +1,437 @@
-*{
+* {
     margin: 0;
-    padding: 0;
-   
-}
-html { 
-    font-size: 100%; /* 100% = 16px */
-    font-family: 'Oswald', sans-serif;
-    
-}
- /*APLICAR IMAGEN DE FONDO*/
-/*BODY*/
-body{
-background-position: center center;
-background-size: cover;
-background-image: url(../img/fondo1\ \(2\).jpg);
-}
-
-
-nav{
-    background-color: rgba(0, 0, 0, .2);
-    position:sticky;
-    top:0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    padding-bottom: 0%;
-    z-index: 25;
-    
-}
-
-
-.menu{ 
-    display: flex;
-    margin: 0;
-    list-style: none;
-    padding: 0%;
-    justify-content: flex-end;
-    flex-wrap: wrap; /*AL CORRER LA PANTALLA ME VA AJUSTANDO LAS OPCIONES DEL MENU PARA AJUSTARSE A LA PANTALLA*/
-    flex-direction: row;
-    
-    
-    
-    
-    /*flex flex-flow: row wrap; /*habrevio flex-wrap y flex-direction con esta opcion*/
-
-}
-.menu li a{
-    display:flex;
-    padding: 10px;
-    color:black;
-    font-size: 200%;
-    font-weight: bold;/*negrita*/
-    align-content: center;
-    /*border-style: double;/*bordes sobre los bloques del menu*/
-    text-decoration: none;
-    /*background-color: black;*/
-    font-style: italic;
-    color: white;
-    font-family: 'Teko', sans-serif;
-    position: relative;
-    
-}
- /*CAMBIA DE COLOR AL POSICIONARSE EN EL LINK*/
-li a:hover{ 
-    color: brown;
-}
-
-/*sub-menu de la seccion beer&coffee*/
-.subMenu{ 
-    list-style: none;
-    position: absolute;
-    width: 10%;
-    display: none;
-    
-}
-.subMenu li{
-    display: block;
-    
-    
-    
-}
-
-
-.menu li:hover .subMenu{
-    display:block;
-    
-}
-
-
-/*sub-menu de la seccion Delivery & Take Away*/
-.subMenu2{ 
-    list-style: none;
-    position: absolute;
-    width: 14%;
-    display: none;
-}
-.subMenu2 li{
-    display: block;
-}
-.menu li:hover .subMenu2{
-    display: block;
-}
-
-/*AJUSTE DEL LOGO PRINCIPAL EN INDEX*/
-#ajusteLogo{
+    padding: 0; }
+  
+  html {
+    font-size: 100%;
+    font-family: 'Oswald', sans-serif; }
+  
+  body{
+      background-position: center center;
+      background-size: cover;
+      background-image: url(../img/fondo1\ \(2\).jpg);}
+  
+  #ajusteLogo {
     border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: 2s;
-    
-
-    
-}
-#ajusteLogo:hover{
-    transform: rotate(360deg);
-}
-
-/*PARRAFOS*/
-p{
+    transition: 2s; }
+  /*CONFIGURAR LOGO DEL MENU*/
+  #confLogoBar {
+    width: 100 px;
+    height: 100 px;
+    border-radius: 50%; }
+  /*CONFIGURAR MENU*/
+  .configurar {
+    font-size: 25 px; }
+  
+  .navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap; }
+  
+  #ajusteLogo:hover {
+    transform: rotate(360deg); }
+  
+  p {
     font-style: oblique;
-    font-weight: bold;
-    
-}
-/*H1*/
-.atributos-h1{ 
-    color:white;
+    font-weight: bold; }
+  
+  .atributos-h1 {
+    color: white;
     text-align: center;
     font-size: 75px;
     font-family: 'Teko', sans-serif;
     align-content: center;
-    margin-top: 3%;
-    
-}
-/*H2*/
-h2{
-    text-align: center;
-}
-
-
-
-/*BLOQUE DE SECCION INDEX*/
-.aplicarGrid{
+    margin-top: 3%; }
+  
+  h2 {
+    text-align: center; }
+  
+  .aplicarGrid {
     display: grid;
-    grid-template-areas: 
-    "cabeza   cabeza     cabeza" /* 1er fila */
-    "parrafo1   parrafo1    parrafo1"/*2da fila*/
-    "carrousel       carrousel        carrousel"/*3ra fila*/
-     "pie        pie         pie";/*4ta fila*/
+    grid-template-areas: "cabeza   cabeza     cabeza"
+   "parrafo1   parrafo1    parrafo1"
+   "carrousel       carrousel        carrousel"
+   "pie        pie         pie";
     grid-template-rows: 0fr 0fr 1fr 0fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0x;
-    
-    height: 120vh;
-    
-}
-   
-   
-
-
-header{
-    grid-area: cabeza;
-}   
-#carrousel{
+    grid-column-gap: 0 px;
+    grid-row-gap: 0 px;
+    height: 120vh; }
+  
+  header {
+    grid-area: cabeza; }
+  
+  #carrousel {
     grid-area: carrousel;
     height: 50%;
     width: 50%;
-    margin-left: 25%;
-}
-
-
-
-#parrafoIndex{
+    margin-left: 25%; }
+  
+  #parrafoIndex {
     grid-area: parrafo1;
-    /*background-color: slateblue;*/
-    text-align: center;
-}
-#img1{
-    grid-area: img1;
-    /*background-color: seagreen;*/
-    text-align: center;
-    /*margin-bottom: 15%;*/
-    background-image: linear-gradient(yellow, orange , black);
-    
-}
-#modificarImg1{
-    height: 500px;  
-    width: 400px; 
-    border: solid 3px black;
-    transition: 2s;
-    
-}
-
-#modificarImg1:hover{
-    height: 500px;  
+    text-align: center; }
+  
+  #modificarImg1 {
+    height: 500px;
     width: 400px;
-}
-
-
-#img2{
-    grid-area: img2;
-    /*background-color: tan;*/
-    text-align: center;
-    background-image: linear-gradient(yellow, orange , black);
-}
-#modificarImg2{
-    height: 500px;  
-    width: 400px; 
     border: solid 3px black;
-    transition: 2s;
-}
-
-#modificarImg2:hover{
-    height: 500px;  
+    transition: 2s; }
+  
+  #modificarImg2 {
+    height: 500px;
     width: 400px;
- }
-
-#img3{
-    grid-area: img3;
-    /*background-color: yellow;*/
-    text-align: center;
-    background-image: linear-gradient(yellow, orange , black);
-    
-}
-#modificarImg3{
-    height: 500px;  
-    width: 400px; 
     border: solid 3px black;
-    transition: 2s;
-
-}
-#modificarImg3:hover{
-    height: 500px;  
+    transition: 2s; }
+  
+  #modificarImg3 {
+    height: 500px;
     width: 400px;
- }
-
-
-
-footer{
+    border: solid 3px black;
+    transition: 2s; }
+   
+  
+  
+  footer {
     grid-area: pie;
     background-color: black;
-    color: blanchedalmond;
+    color: white;
     text-align: right;
     position: sticky;
-    top:0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-
-}
-/*BLOQUE DE SECCION NOSOTROS*/
-.aplicarGrid-Nosotros{
-    display: grid;
-    grid-template-areas:
-    "h1       h1     h1" /* 2da fila*/
-    "parrafo   parrafo    parrafo"/*3ra fila*/
-    "video          video           video"/*4ta fila*/
-    "pie         pie             pie"/*5ta fila*/
-;
-    grid-template-rows:  1fr 1fr 0fr 0fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    
-    height: 120vh;
-
-}
-
-#h1-Nosotros{
-    grid-area: h1;
-    
-    
-   
-}
-#parrafo-Nosotros{
-    grid-area: parrafo;
-    text-align: center;
-}
-#video{
-    grid-area: video;
-    border: solid 1px;
-    width: 600px;
-    height: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-    background-image: url(../img/Back.jpg);
-}
-
-/*BLOQUE DE SECCION BEER&COFFEE*/
-.aplicarGrid-Beer{
-    display: grid;
-    grid-template-areas: 
-    "h1-beer   h1-beer     h1-beer " /* 1er fila */
-    "ham   ham    ham "/*2da fila*/
-    "cerveza1       cerveza1        cerveza1"/*3ra fila*/
-     "cerveza2        cerveza2         cerveza2"/*4ta fila*/
-     "pie   pie   pie";
-    
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    
-    height: 100vh;
-    
-}
-
-#h1-beer{
-    grid-area: h1-beer;
-}
-#bloqueCervezas1{
-    grid-area: cerveza1;
-    /*margin-left: 40%;*/
-    
-    text-align: center;
-}
-#bloqueCervezas2{
-    grid-area: cerveza2;
-    text-align: center;
-    /*background-color: black;*/
-    margin-left: 30%;
-    margin-right: 30%;
-    color:white;
-    font-weight: bold;
-    
-}
-#hamburguesas{
-    grid-area: ham;
-    
-}
-#pie{
-    grid-area: pie;
-}
-
-
-
-    
-
-/*BLOQUE DE SECCION DELIVERY&TAKE AWAY*/
-.aplicarGrid-delivery{
-    display: grid;
-    grid-template-areas: 
-    "cabeza   cabeza     cabeza" /* 1er fila */
-    "h1-delivery        h1-delivery     h1-delivery"/* 2da fila*/
-    "parrafowsp       parrafowsp     parrafowsp" /*3ra fila*/
-    "wsp   wsp    wsp"/*4ta fila*/
-    "parrafoMapa       parrafoMapa        parrafoMapa"/*5ta fila*/
-     "mapa        mapa         mapa"/*6ta fila*/
-     "pie           pie         pie"/*7ma fila*/;
-    grid-template-rows: 0fr 1fr 0.5fr 1fr 0.5fr 1fr 0fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 5px;
-    grid-row-gap: 1px;
-    
-    height: 120vh;
-    
-}
-#bloque-h1{
-    grid-area: h1-delivery;
-    
-    
-    
-}
-
-#parrafowsp{
-    grid-area: parrafowsp;
-    text-align: center;
-    
-    
-    
-}
-#bloque-wsp{
-    grid-area: wsp;
-    display: flex;
-    justify-content: center;
-}
-#parrafoMapa{
-    grid-area: parrafoMapa;
-    text-align: center;
-    padding-top: 30px;
-    
-
-}
-#bloque-mapa{
-    display: flex;
-    grid-area: mapa;
-    justify-content: center;
-    padding-bottom: 100px;
+    top: 0 px;
+    left: 0 px;
+    right: 0 px;
+    bottom: 0 px; }
   
-    
-}
-
-/*BLOQUE DE SECCION RESERVA*/
-#ColorFormulario { /*COLOR Y FORMATO AL FORMULARIO*/
-    
-    /*padding: 0;
-    /*width: 30%;
-    height: 30%;*/
-    /*margin-left: 35%;*/
-    font-size: 150%;
-    color:black;
-    font-style: italic;
-    
-    
-    
-    
-    
-}
-
-.aplicarGrid-reserva{
-    display: grid;
-    grid-template-areas: 
-    "cabeza   cabeza     cabeza" /* 1er fila */
-    "h1-reserva        h1-reserva       h1-reserva"/* 2da fila*/
-    "formulario       formulario     formulario" /*3ra fila*/
-    "pie   pie    pie"/*4ta fila*/;
-
-    grid-template-rows: 0fr 0fr 1fr 0fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    
-    height: 120vh;
-}
-
-#h1-reserva{
-    grid-area: h1-reserva;
-    
-}
-#formulario{
-   grid-area:formulario;
-   margin-left: auto;
-   margin-right: auto;
-}
-/*smartphone*/
-@media(max-width: 480px){
-    .aplicarGrid{
-        display: grid;
-        grid-template-areas: 
-        "cabeza   cabeza     cabeza" /* 1er fila */
-        "parrafo1   parrafo1    parrafo1"/*2da fila*/
-        "carrousel       carrousel        carrousel"/*3ra fila*/
-         "pie        pie         pie";/*4ta fila*/
-        grid-template-rows: 1fr 1fr 5fr 0fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
-        
-        height: 100vh;
-    }
-    #carrousel{
-        grid-area: carrousel;
-        width: 70%;
-        margin-left: 15%;
-
-        
-    }
-    #confLogoBar{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        display: none;
-    }
-    footer{
-        padding-bottom: 0%;
-        text-align: center;
-        
-    }
-    .ocultar{
-        display: none;
-    }
-    
-    #parrafoIndex{
-        display: none;
-        grid-area: parrafo;
-    }
-    
-    header{
-        margin-left: 19px;
-        padding-bottom: 28px;
-        margin-right: 74.5%;
-        
-    }
-
-    .menu{ 
-        display: flex;
-        margin: 0;
-        list-style: none;
-        padding: 0%;
-        justify-content: center;
-        flex-wrap: wrap; /*AL CORRER LA PANTALLA ME VA AJUSTANDO LAS OPCIONES DEL MENU PARA AJUSTARSE A LA PANTALLA*/
-        flex-direction: row;
-        
-        /*flex flex-flow: row wrap; /*habrevio flex-wrap y flex-direction con esta opcion*/
-    
-    }
-    .menu li a{
-        display: flex;
-        padding: 10px;
-        color:black;
-        font-size: 200%;
-        font-weight: bold;/*negrita*/
-        align-content: center;
-        /*border-style: double;/*bordes sobre los bloques del menu*/
-        text-decoration: none;
-        /*background-color: black;*/
-        font-style: italic;
-        color: white;
-        font-family: 'Teko', sans-serif;
-        position: relative;
-    }
-    #ajusteLogo{
-        border-radius: 50%;
-        display: block;
-        margin-left: 105px;
-        /*margin-right: auto;*/
-        width: 100px;
-        height: 100px;
-        
-    }
-
-    #modificarImg1{
-        height: 200px;  
-        width: 700px; 
-        border: solid 3px black;
-    }
-    
-    #img2{
-        grid-area: img2;
-        /*background-color: tan;*/
-        text-align: center;
-        
-        
-    
-    }
-    #modificarImg2{
-       border: solid 3px black;
-       height: 200px;  
-       width: 700px; 
-    }
-    #img3{
-        grid-area: img3;
-        /*background-color: yellow;*/
-        text-align: center
-    }
-    #modificarImg3{
-        height: 200px;  
-        width: 700px; 
-        border: solid 3px black;
-    }
-
-
-
-    }
-
-/* Tablet */
+  /*BLOQUE DE SECCION NOSOTROS*/
+  .aplicarGrid-Nosotros{
+      display: grid;
+      grid-template-areas:
+      "h1       h1     h1" /* 2da fila*/
+      "parrafo   parrafo    parrafo"/*3ra fila*/
+      "video          video           video"/*4ta fila*/
+      "pie         pie             pie"/*5ta fila*/
+  ;
+      grid-template-rows:  1fr 1fr 0fr 0fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      height: 120vh;
+  }
+  #h1-Nosotros{
+      grid-area: h1;
+  }
+  #parrafo-Nosotros{
+      grid-area: parrafo;
+      text-align: center;
+      font-size: 25px;
+      color: black;
+  }
+  #video{
+      grid-area: video;
+      width: 1000px;
+      height: 600px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 100px;
+      background-image: url(../img/Back.jpg);
+  }
+  
+  /*BLOQUE DE SECCION BEER&BURGER*/
+  .aplicarGrid-Beer{
+      display: grid;
+      grid-template-areas: 
+      "h1-beer   h1-beer     h1-beer " /* 1er fila */
+      "ham   ham    ham "/*2da fila*/
+      "cerveza1       cerveza1        cerveza1"/*3ra fila*/
+       "cerveza2        cerveza2         cerveza2"/*4ta fila*/
+       "pie   pie   pie";
+      
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      
+      height: 100vh;
+      
+  }
+  
+  #h1-beer{
+      grid-area: h1-beer;
+  }
+  #bloqueCervezas1{
+      grid-area: cerveza1;
+      /*margin-left: 40%;*/
+      
+      text-align: center;
+  }
+  #bloqueCervezas2{
+      grid-area: cerveza2;
+      text-align: center;
+      /*background-color: black;*/
+      margin-left: 30%;
+      margin-right: 30%;
+      color:whitesmoke;
+      font-weight: bold;
+      font-size: 25px;
+      
+  }
+  #hamburguesas{
+      grid-area: ham;
+      
+  }
+  #pie{
+      grid-area: pie;
+  }
+  
+  /*BLOQUE DE SECCION DELIVERY&TAKE AWAY*/
+  .aplicarGrid-delivery{
+      display: grid;
+      grid-template-areas: 
+      "cabeza   cabeza     cabeza" /* 1er fila */
+      "h1-delivery        h1-delivery     h1-delivery"/* 2da fila*/
+      "parrafowsp       parrafowsp     parrafowsp" /*3ra fila*/
+      "wsp   wsp    wsp"/*4ta fila*/
+      "parrafoMapa       parrafoMapa        parrafoMapa"/*5ta fila*/
+       "mapa        mapa         mapa"/*6ta fila*/
+       "pie           pie         pie"/*7ma fila*/;
+      grid-template-rows: 0fr 1fr 0.5fr 1fr 0.5fr 1fr 0fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 5px;
+      grid-row-gap: 1px;
+      height: 120vh;
+      
+  }
+  #bloque-h1{
+      grid-area: h1-delivery;
+  }
+  #parrafowsp{
+      grid-area: parrafowsp;
+      text-align: center;
+      color: white;
+  }
+  #bloque-wsp{
+      grid-area: wsp;
+      display: flex;
+      justify-content: center;
+  }
+  #parrafoMapa{
+      grid-area: parrafoMapa;
+      text-align: center;
+      padding-top: 30px;
+      color: white;
+  }
+  #bloque-mapa{
+      display: flex;
+      grid-area: mapa;
+      justify-content: center;
+      padding-bottom: 100px;
+  }
+  /*BLOQUE DE SECCION RESERVA*/
+  
+  /*COLOR Y FORMATO AL FORMULARIO*/
+  #ColorFormulario {
+      /*padding: 0;
+      /*width: 30%;
+      height: 30%;*/
+      /*margin-left: 35%;*/
+      font-size: 150%;
+      color:black;
+      font-style: italic;
+  }
+  .aplicarGrid-reserva{
+      display: grid;
+      grid-template-areas: 
+      "cabeza   cabeza     cabeza" /* 1er fila */
+      "h1-reserva        h1-reserva       h1-reserva"/* 2da fila*/
+      "formulario       formulario     formulario" /*3ra fila*/
+      "pie   pie    pie"/*4ta fila*/;
+  
+      grid-template-rows: 0fr 0fr 1fr 0fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      height: 120vh;
+  }
+  #h1-reserva{
+      grid-area: h1-reserva;
+  }
+  #formulario{
+     grid-area:formulario;
+     margin-left: auto;
+     margin-right: auto;
+  }
+  /*smartphone INDEX*/
+  @media(max-width: 480px){
+      .aplicarGrid{
+          display: grid;
+          grid-template-areas: 
+          "cabeza   cabeza     cabeza" /* 1er fila */
+          "parrafo1   parrafo1    parrafo1"/*2da fila*/
+          "carrousel       carrousel        carrousel"/*3ra fila*/
+           "pie        pie         pie";/*4ta fila*/
+          grid-template-rows: 1fr 1fr 5fr 0fr;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-column-gap: 5px;
+          grid-row-gap: 5px;
+          
+          height: 100vh;
+      }
+      #carrousel{
+          grid-area: carrousel;
+          width: 70%;
+          margin-left: 15%;
+  
+          
+      }
+      #confLogoBar{
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          display: none;
+      }
+      footer{
+          padding-bottom: 0%;
+          text-align: center;
+          
+      }
+      .ocultar{
+          display: none;
+      }
+      
+      #parrafoIndex{
+          display: none;
+          grid-area: parrafo;
+      }
+      
+      header{
+          margin-left: 19px;
+          padding-bottom: 28px;
+          margin-right: 74.5%;
+          
+      }
+  
+      .menu{ 
+          display: flex;
+          margin: 0;
+          list-style: none;
+          padding: 0%;
+          justify-content: center;
+          flex-wrap: wrap; /*AL CORRER LA PANTALLA ME VA AJUSTANDO LAS OPCIONES DEL MENU PARA AJUSTARSE A LA PANTALLA*/
+          flex-direction: row;
+          
+          /*flex flex-flow: row wrap; /*habrevio flex-wrap y flex-direction con esta opcion*/
+      
+      }
+      .menu li a{
+          display: flex;
+          padding: 10px;
+          color:black;
+          font-size: 200%;
+          font-weight: bold;/*negrita*/
+          align-content: center;
+          /*border-style: double;/*bordes sobre los bloques del menu*/
+          text-decoration: none;
+          /*background-color: black;*/
+          font-style: italic;
+          color: white;
+          font-family: 'Teko', sans-serif;
+          position: relative;
+      }
+      #ajusteLogo{
+          border-radius: 50%;
+          display: block;
+          margin-left: 105px;
+          /*margin-right: auto;*/
+          width: 100px;
+          height: 100px;
+          
+      }
+  
+      #modificarImg1{
+          height: 200px;  
+          width: 700px; 
+          border: solid 3px black;
+      }
+      
+      #img2{
+          grid-area: img2;
+          /*background-color: tan;*/
+          text-align: center;
+          
+          
+      
+      }
+      #modificarImg2{
+         border: solid 3px black;
+         height: 200px;  
+         width: 700px; 
+      }
+      #img3{
+          grid-area: img3;
+          /*background-color: yellow;*/
+          text-align: center
+      }
+      #modificarImg3{
+          height: 200px;  
+          width: 700px; 
+          border: solid 3px black;
+      }
+  
+  
+  
+  }
+  
+/*Tablet INDEX*/
 @media (min-width: 600px) and (max-width: 1023px) {
-    
-    
-    /* GRID AREAS */
+      
+/* GRID AREAS */
     .grillaAreas {
-        display: grid;
-        grid-template-areas: 
-        "cabeza   cabeza     cabeza" /* 1er fila */
-        "parrafo1 parrafo1 parrafo1"
-        "img1 img2 img3" /* 2da fila */
-        "pie       pie      pie"    /* 4ta fila */
-        ;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        height: 80vh;
-        
-    }
-    
+          display: grid;
+          grid-template-areas: 
+          "cabeza   cabeza     cabeza" /* 1er fila */
+          "parrafo1 parrafo1 parrafo1"
+          "img1 img2 img3" /* 2da fila */
+          "pie       pie      pie"    /* 4ta fila */
+          ;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
+          height: 80vh;}
+      
     #parrafoIndex{
-        grid-area: parrafo1;
-        
-        
+          grid-area: parrafo1;
     }
     #ajusteLogo{
-        border-radius: 50%;
-        display: block;
-        margin-left: 40%;
-        margin-right: auto;
-        width: 150px;
-        height: 150px;
-        
+          border-radius: 50%;
+          display: block;
+          margin-left: 40%;
+          margin-right: auto;
+          width: 150px;
+          height: 150px;
     }
-
+  
     #modificarImg1{
         height: 400px;  
         width: 1000px; 
         border: solid 3px black;
     }
-    
+      
     #img2{
         grid-area: img2;
         /*background-color: tan;*/
         text-align: center;
-        
-        
-        
-        
-    
     }
     #modificarImg2{
-       border: solid 3px black;
-       height: 400px;  
-        width: 1000px; 
+         border: solid 3px black;
+         height: 400px;  
+          width: 1000px; 
     }
     #img3{
         grid-area: img3;
@@ -630,9 +451,9 @@ footer{
         justify-content: center;
         flex-wrap: wrap; /*AL CORRER LA PANTALLA ME VA AJUSTANDO LAS OPCIONES DEL MENU PARA AJUSTARSE A LA PANTALLA*/
         flex-direction: row;
-        
-        /*flex flex-flow: row wrap; /*habrevio flex-wrap y flex-direction con esta opcion*/
-    
+          
+          /*flex flex-flow: row wrap; /*habrevio flex-wrap y flex-direction con esta opcion*/
+      
     }
     .menu li a{
         display: flex;
@@ -649,25 +470,25 @@ footer{
         font-family: 'Teko', sans-serif;
         position: relative;
     }
-
-
-
+  
+  
+  
 }
-
-.configurar{
-    font-size: 25px;
-}
-.navbar-brand {
-    display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
-}
-#confLogoBar{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
+  
+  .configurar{
+      font-size: 25px;
+  }
+  .navbar-brand {
+      display: inline-block;
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+  }
+  #confLogoBar{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+  }

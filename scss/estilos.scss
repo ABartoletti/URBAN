@@ -1,0 +1,128 @@
+$minValor: 0;
+$maxPorcentaje: 100%;
+$maxValor: 100;
+$minPorcentaje: 0%;
+$backgroundNav: rgba(0, 0, 0, .2);
+$primaryColor: black;
+$secondaryColor: white;
+$estiloParrafo: oblique;
+$centrar:center;
+
+*{
+    margin: $minValor;
+    padding: $minValor;
+}
+html { 
+    font-size: $maxPorcentaje; 
+    font-family: 'Oswald', sans-serif;
+}
+#ajusteLogo{
+    border-radius: $maxPorcentaje / 2;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 2s;
+}
+#confLogoBar{
+    width: ($maxValor)px;
+    height: ($maxValor)px;
+    border-radius: $maxPorcentaje/2;
+    
+}
+.configurar{
+    font-size: ($maxValor/4)px;
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+#ajusteLogo:hover{
+    transform: rotate(360deg);
+}
+p{
+    font-style: $estiloParrafo;
+    font-weight: bold;
+}
+.atributos-h1{ 
+    color:$secondaryColor;
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Teko', sans-serif;
+    align-content: center;
+    margin-top: 3%;
+}
+h2{
+    text-align: $centrar;
+}
+.aplicarGrid{
+    display: grid;
+    grid-template-areas: 
+    "cabeza   cabeza     cabeza"
+    "parrafo1   parrafo1    parrafo1"
+    "carrousel       carrousel        carrousel"
+     "pie        pie         pie";
+    grid-template-rows: ($minValor)fr ($minValor)fr 1fr ($minValor)fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: ($minValor)px;
+    grid-row-gap: ($minValor)px;
+    height: ($maxValor + 20)vh;
+}
+header{
+    grid-area: cabeza;
+}   
+#carrousel{
+    grid-area: carrousel;
+    height: $maxPorcentaje/2;
+    width: $maxPorcentaje/2;
+    margin-left: $maxPorcentaje/4;
+}
+#parrafoIndex{
+    grid-area: parrafo1;
+    text-align: $centrar;
+}
+#modificarImg1{
+    height: ($maxValor*5)px;  
+    width: ($maxValor*4)px; 
+    border: solid 3px $primaryColor;
+    transition: 2s;
+}
+#modificarImg2{
+    height: ($maxValor*5)px;  
+    width: ($maxValor*4)px; 
+    border: solid 3px $primaryColor;
+    transition: 2s;
+}
+#modificarImg3{
+    height: ($maxValor*5)px;  
+    width: ($maxValor*4)px; 
+    border: solid 3px $primaryColor;
+    transition: 2s;
+}
+footer{
+    grid-area: pie;
+    background-color:$primaryColor;
+    color: $secondaryColor;
+    text-align: right;
+    position: sticky;
+    top:($minValor)px;
+    left: ($minValor)px;
+    right: ($minValor)px;
+    bottom: ($minValor)px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
