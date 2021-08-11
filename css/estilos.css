@@ -9,22 +9,31 @@
   body{
       background-position: center center;
       background-size: cover;
-      background-image: url(../img/fondo1\ \(2\).jpg);}
-  
+      background-image: url(../img/fondo1\ \(2\).jpg);
+      height: 140vh;
+
+    }
+    
   #ajusteLogo {
     border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: 2s; }
+    transition: 2s;
+    margin-top: 5%;
+    
+}
   /*CONFIGURAR LOGO DEL MENU*/
   #confLogoBar {
-    width: 100 px;
-    height: 100 px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%; }
-  /*CONFIGURAR MENU*/
+  
+/*CONFIGURAR MENU*/
   .configurar {
-    font-size: 25 px; }
+    font-size: 25px;
+    
+}
   
   .navbar-brand {
     display: inline-block;
@@ -40,18 +49,30 @@
   
   p {
     font-style: oblique;
-    font-weight: bold; }
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
   
-  .atributos-h1 {
+    .centrar{
+    text-align: center;
+      
+  }
+  
+  h1 {
     color: white;
     text-align: center;
-    font-size: 75px;
+    font-size: 700px;
     font-family: 'Teko', sans-serif;
     align-content: center;
-    margin-top: 3%; }
+    margin-top: 5%; }
   
+
   h2 {
     text-align: center; }
+
+  
   
   .aplicarGrid {
     display: grid;
@@ -63,7 +84,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 0 px;
     grid-row-gap: 0 px;
-    height: 120vh; }
+    height: 140vh; }
   
   header {
     grid-area: cabeza; }
@@ -76,7 +97,9 @@
   
   #parrafoIndex {
     grid-area: parrafo1;
-    text-align: center; }
+    text-align: center; 
+    font-size: 30px;
+}
   
   #modificarImg1 {
     height: 500px;
@@ -98,40 +121,25 @@
    
   
   
-  footer {
-    grid-area: pie;
-    background-color: black;
-    color: white;
-    text-align: right;
-    position: sticky;
-    top: 0 px;
-    left: 0 px;
-    right: 0 px;
-    bottom: 0 px; }
+ 
   
   /*BLOQUE DE SECCION NOSOTROS*/
-  .aplicarGrid-Nosotros{
-      display: grid;
-      grid-template-areas:
-      "h1       h1     h1" /* 2da fila*/
-      "parrafo   parrafo    parrafo"/*3ra fila*/
-      "video          video           video"/*4ta fila*/
-      "pie         pie             pie"/*5ta fila*/
-  ;
-      grid-template-rows:  1fr 1fr 0fr 0fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 5px;
-      grid-row-gap: 5px;
-      height: 120vh;
-  }
+  
   #h1-Nosotros{
-      grid-area: h1;
-  }
+    margin-top: 12%;
+    font-size: 75px;
+    color: white;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    align-content: center; 
+}
+      
+  
   #parrafo-Nosotros{
       grid-area: parrafo;
       text-align: center;
-      font-size: 25px;
-      color: black;
+      font-size: 35px;
+      color:white;
   }
   #video{
       grid-area: video;
@@ -145,51 +153,73 @@
   }
   
   /*BLOQUE DE SECCION BEER&BURGER*/
-  .aplicarGrid-Beer{
-      display: grid;
-      grid-template-areas: 
-      "h1-beer   h1-beer     h1-beer " /* 1er fila */
-      "ham   ham    ham "/*2da fila*/
-      "cerveza1       cerveza1        cerveza1"/*3ra fila*/
-       "cerveza2        cerveza2         cerveza2"/*4ta fila*/
-       "pie   pie   pie";
-      
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
-      
-      height: 100vh;
-      
+  
+  
+  
+    #h1-beer{
+        margin-top: 10%;
+        font-size: 75px;
+        color: white;
+        text-align: center;
+        font-family: 'Teko', sans-serif;
+        align-content: center;
+           
+    }   
+  #confCerveza{
+      margin-left: 1.5%;
+      border: solid 5px black;
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+#boton1{
+margin-left: 50%;
+background-color: black;
+}
+#boton2{
+    margin-left: 40%;
+    background-color: black;
+    
+}
+#boton3{
+    margin-left: 10%;  
+    background-color: black;
+    
+}
+#boton4{
+    margin-right: 50%;
+    background-color: black;
+} 
+.mover{
+    margin-top: 200px;
+    
+    
+}
+ 
+  .card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-image: url(../img/fondo1\ \(4\).jpg);
+    background-clip: border-box;
+    border: 5px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
+  .card-title {
+    margin-bottom: 0.75rem;
+    color: white;
+  }
+  .card-text {
+    color: white;
+    
   }
   
-  #h1-beer{
-      grid-area: h1-beer;
-  }
-  #bloqueCervezas1{
-      grid-area: cerveza1;
-      /*margin-left: 40%;*/
-      
-      text-align: center;
-  }
-  #bloqueCervezas2{
-      grid-area: cerveza2;
-      text-align: center;
-      /*background-color: black;*/
-      margin-left: 30%;
-      margin-right: 30%;
-      color:whitesmoke;
-      font-weight: bold;
-      font-size: 25px;
-      
-  }
-  #hamburguesas{
-      grid-area: ham;
-      
-  }
-  #pie{
-      grid-area: pie;
-  }
   
   /*BLOQUE DE SECCION DELIVERY&TAKE AWAY*/
   .aplicarGrid-delivery{
@@ -209,9 +239,48 @@
       height: 120vh;
       
   }
-  #bloque-h1{
-      grid-area: h1-delivery;
+  #h1-delivery{
+    margin-top: 12%;
+    font-size: 75px;
+    color: white;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    align-content: center;
   }
+  .card-text{
+      margin-top: 5%;
+      text-align: center;
+      
+  }
+  .card-title{
+      margin-top: 15%;
+      margin-left: 30%;
+  }
+  #estiloBotonMenu{
+      background-color: black;
+      color: blanchedalmond;
+      width: 50vh;
+      margin-left: 28%;
+   }
+  #textoCard{
+      font-size: 100px;
+  }
+
+  
+  #moverTextMap{
+      margin-left: 20%;
+      font-size: 20px;
+  }
+  
+  #posicionMapa{
+  margin-top: 3.1%;  
+  
+}
+#ignorarDesktop{
+    display: none;
+}
+
+
   #parrafowsp{
       grid-area: parrafowsp;
       text-align: center;
@@ -236,12 +305,12 @@
   }
   /*BLOQUE DE SECCION RESERVA*/
   
-  /*COLOR Y FORMATO AL FORMULARIO*/
+  COLOR Y FORMATO AL FORMULARIO*/
   #ColorFormulario {
-      /*padding: 0;
-      /*width: 30%;
-      height: 30%;*/
-      /*margin-left: 35%;*/
+      padding: 0;
+      width: 30%;
+      height: 30%;
+      margin-left: 35%;
       font-size: 150%;
       color:black;
       font-style: italic;
@@ -249,25 +318,31 @@
   .aplicarGrid-reserva{
       display: grid;
       grid-template-areas: 
-      "cabeza   cabeza     cabeza" /* 1er fila */
-      "h1-reserva        h1-reserva       h1-reserva"/* 2da fila*/
-      "formulario       formulario     formulario" /*3ra fila*/
-      "pie   pie    pie"/*4ta fila*/;
+      "cabeza   cabeza     cabeza" 
+      "h1-reserva        h1-reserva       h1-reserva"
+      "formulario       formulario     formulario"
+      "pie   pie    pie";
   
-      grid-template-rows: 0fr 0fr 1fr 0fr;
+      grid-template-rows: 0.5fr 0fr 1fr 0fr;
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 5px;
       grid-row-gap: 5px;
       height: 120vh;
   }
-  #h1-reserva{
-      grid-area: h1-reserva;
-  }
-  #formulario{
-     grid-area:formulario;
-     margin-left: auto;
-     margin-right: auto;
-  }
+  
+    #h1-reserva{
+    padding-top: 20%;
+    font-size: 75px;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    padding-right: 76%;
+    
+   
+}
+
+
+
+
   /*smartphone INDEX*/
   @media(max-width: 480px){
       .aplicarGrid{
@@ -306,10 +381,7 @@
           display: none;
       }
       
-      #parrafoIndex{
-          display: none;
-          grid-area: parrafo;
-      }
+      
       
       header{
           margin-left: 19px;
@@ -443,42 +515,20 @@
         width: 1000px;  
         border: solid 3px black;
     }
-    .menu{ 
-        display: flex;
-        margin: 0;
-        list-style: none;
-        padding: 0%;
-        justify-content: center;
-        flex-wrap: wrap; /*AL CORRER LA PANTALLA ME VA AJUSTANDO LAS OPCIONES DEL MENU PARA AJUSTARSE A LA PANTALLA*/
-        flex-direction: row;
-          
-          /*flex flex-flow: row wrap; /*habrevio flex-wrap y flex-direction con esta opcion*/
-      
-    }
-    .menu li a{
-        display: flex;
-        padding: 10px;
-        color:black;
-        font-size: 150%;
-        font-weight: bold;/*negrita*/
-        align-content: center;
-        /*border-style: double;/*bordes sobre los bloques del menu*/
-        text-decoration: none;
-        /*background-color: black;*/
-        font-style: italic;
-        color: white;
-        font-family: 'Teko', sans-serif;
-        position: relative;
-    }
+    
   
   
   
 }
+/*FIN MEDIAQUERY INDEX*/
+
+
   
-  .configurar{
+.configurar{
       font-size: 25px;
-  }
-  .navbar-brand {
+      
+}
+.navbar-brand {
       display: inline-block;
       padding-top: 0.3125rem;
       padding-bottom: 0.3125rem;
@@ -486,9 +536,200 @@
       font-size: 1.25rem;
       line-height: inherit;
       white-space: nowrap;
+      
   }
-  #confLogoBar{
+  
+#confLogoBar{
       width: 100px;
       height: 100px;
       border-radius: 50%;
   }
+
+.fab{
+    width: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+.social{
+    position: fixed;
+    right: 0%;
+    top: 0px;
+}
+.social ul{
+    list-style: none;
+    padding: 10px;
+}
+.social a{
+    display:inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    z-index: 0;
+    transition: 0.1s ease;
+}
+.social a:hover{
+    padding: 10px 25px;
+}
+.configRed{
+    display:inline-block;
+    
+}
+
+/*MEDIA QUERY GENERAL PARA SMARTPHONE*/
+@media(max-width: 480px){
+#video{
+    grid-area: video;
+      width: 300px;
+      height: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 100px;
+      background-image: url(../img/Back.jpg);
+  }
+
+#navbarNav{
+    background-color: black;
+}
+
+#h1-reserva{
+    padding-right: 20%;
+}
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-image: url(../img/fondo1\ \(4\).jpg);
+    background-clip: border-box;
+    border: 5px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-left: 8%;
+  }
+ #distancia{
+     padding-bottom: 35%;
+ }
+  
+ h4{
+    text-align: center;
+    margin-right: 30%;
+}
+
+#moverPedidosYa{
+    padding-right: 40px;
+}
+#moverTextMap{
+    text-align: center;
+    padding-right:20%;
+}
+#posicionMapa{
+display: none;
+}
+.tamañoSmartphone{
+    height: 180vh;
+}
+/*BOTONES DE BLOQUE CERVEZAS EN SECCION BEER&BURGER*/
+#boton1{
+    margin-left: 35%;
+    background-color: black;
+    }
+    #boton2{
+        margin-left:35%;
+        background-color: black;
+        
+    }
+    #boton3{
+        margin-left:35%;  
+        background-color: black;
+        
+    }
+    #boton4{
+        margin-left: 35%;
+        background-color: black;
+    } 
+
+/*BOTON DE MENU-CARTA DELIVERY*/
+    #estiloBotonMenu{
+        background-color: black;
+        color: blanchedalmond;
+        width: 30vh;
+        padding-left: 0%;
+     }
+     #moverBotonMenu{
+         padding-right: 25%;
+     }
+
+
+
+}
+
+
+
+/*ESTILOS DEL FORM SECION RESERVA*/
+.form_main {
+    width: 100%;
+   
+}
+.form_main h4 {
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.heading {
+    border-bottom: 1px solid #fcab0e;
+    padding-bottom: 9px;
+    position: relative;
+}
+.heading span {
+    background: #9e6600 none repeat scroll 0 0;
+    bottom: -2px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 75px;
+}   
+.form {
+    border-radius: 7px;
+    padding: 6px;
+}
+.txt[type="text"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.txt_3[type="text"] {
+    margin: 10px 0 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.txt2[type="submit"] {
+    background: #242424 none repeat scroll 0 0;
+    border: 1px solid #4f5c04;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 35px;
+    margin: 10px 0;
+    padding: 0;
+    text-transform: uppercase;
+    width: 30%;
+}
+.txt2:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #5793ef;
+    transition: all 0.5s ease 0s;
+}
+
+
+

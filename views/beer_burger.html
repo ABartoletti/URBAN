@@ -1,192 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-    <meta name="keywords" content="cerveceria, San Miguel, Urban, Beer, Burger, Hamburguesas">
-    <meta name="description" content="Urban, Cerveceria artesanal ubicada en la localidad de San Miguel con una amplia variedad de opciones gastronomicas.">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <meta name="keywords" content="cerveceria, San Miguel, Urban, Beer, Burger, Hamburguesas">
+  <meta name="description" content="Urban, Cerveceria artesanal ubicada en la localidad de San Miguel con una amplia variedad de opciones gastronomicas.">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
     <title>Beer&Burger / Nuestro Menu</title>
 </head>
-<body>
+<body class="tamañoSmartphone">
 <!--MENU DE NAVEGACION, BLOQUE FUERA DE LA GRILLA GRID-->     
 <div class="configurar">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <a class="navbar-brand" href="../index.html"><img src="../img/Logo.jpg" alt="logo" id="confLogoBar"></a>
-        <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+      <a class="navbar-brand" href="../index.html"><img src="../img/Logo.jpg" alt="logo" id="confLogoBar"></a>
+      <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Inicio <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./beer_burger.html">Beer&Burger</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./delivery_takeaway.html">Delivery</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./reservas.html">Reservas</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./beer_burger.html">Beer&Burger</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./delivery_takeaway.html">Delivery</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./reservas.html">Reservas</a>
-              </li>
-          </ul>
-        </div>
-      </nav>
+        </ul>
+      </div>
+    </nav>
 </div>
 <!--COMIENZA GRILLA GRID CON APERTURA DE SECCTION APLICANDO A TODO EL BLOQUE-->    
-<section class="aplicarGrid-Beer">
-
-    <!--HEADER CON EL TITULO DE LA SECCION EN H1-->           
-        <header id="h1-beer" class=" animate__animated animate__fadeInDown">
-            <h1 class="atributos-h1" >B E E R  <br> & <br> B U R G E R </h1>
-        </header>
-        
-       
 
 
-        
-    <!--APLICO BLOQUE CON GRID EN BOOTSTRAP, 2 CONTAINER CON 3 TARJETAS CADA UNO -->       
-    <section id="hamburguesas"> 
-        <h2>Hamburguesas</h2>
-        <br>
-        <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/Completa.png" class="card-img-top" alt="Imagen-1">
-                    <div class="card-body">
-                      <h5 class="card-title">Hamburguesa Completa</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/Philadelphia.png" class="card-img-top" alt="Imagen-2">
-                    <div class="card-body">
-                      <h5 class="card-title">Philadelphia</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/TastyCity.png" class="card-img-top" alt="Imagen-3">
-                    <div class="card-body">
-                      <h5 class="card-title">Tasticity</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-
-          <br>
-
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/Completa.png" class="card-img-top" alt="Imagen-1">
-                    <div class="card-body">
-                      <h5 class="card-title">Hamburguesa Completa</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/Philadelphia.png" class="card-img-top" alt="Imagen-2">
-                    <div class="card-body">
-                      <h5 class="card-title">Philadelphia</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/TastyCity.png" class="card-img-top" alt="Imagen-3">
-                    <div class="card-body">
-                      <h5 class="card-title">TastyCity</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-    </section>        
-      
-            
     
         
-
-
-
-
-<!--BLOQUE DIV CON UN ARTICLE EN EL QUE SE INCLUYE UNA FOTO DE CERVEZAS-->   
-            <div id="bloqueCervezas1">   
-                <h2>Cervezas</h2>
-                <article >
-                    <img src="../img/cervezas-para-todos-los-gustos___GfZq8xFno_1200x630__1.jpg" alt="Nuestras Cervezas" style="height: 250px; width: 400px; border: solid   3px     black;" >
-            
-                </article>  
-            </div>
-<!--BLOQUE DIV CON 4 ARTICLE INCLUYENDO PARRAFO-->
-            <div id="bloqueCervezas2">      
-                <article>
-                    <h3>LAGER</h3>
-                    <p>Lager es un tipo de cerveza con sabor acentuado que se sirve fría, <br>
-                       caracterizada por fermentar en condiciones más lentas empleando levaduras especiales</p>  
-                </article>
-                <article>
-                    <h3>TIPO ALE</h3>
-                    <p>Esta Cerveza enfatiza la malta, dulce y redondeado. <br>
-                       De color oscuro rojizo, con leves notas de la malta tostada, <br>
-                       es una ale fuerte, con carácter a malta, típico de las Scottish ales, con alta complejidad de flavors.</p>  
-                </article>
-                <article>
-                    <h3>HONNEY</h3>
-                    <p>De color dorado es un estilo muy accesible, incorpora la miel en su proceso de elaboración</p>  
-                </article>
-                <article>
-                    <h3>PORTER</h3>
-                    <p>Porter es un estilo de cerveza oscura desarrollado en Londres a partir de cebada malteada marrón.</p>  
-                </article>
-                
-            </div>
-            
-                
-        
-        
-
-        
-            
-                
        
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              
+                <h1 class="animate__animated animate__fadeInDown" id="h1-beer">B E E R  <br> & <br> B U R G E R</h1>
+              
+            </div>
+          </div>
+        </div>
 
+        <div class="container">
+          <div class="row">
+            <h2>Hamburguesas</h2>
+            </div>
+        </div>
+
+        
+
+        <div class="container" >
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/Completa.png" class="card-img-top" alt="Imagen-1">
+                  <div class="card-body">
+                    <h5 class="card-title">Completa</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/Philadelphia.png" class="card-img-top" alt="Imagen-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Philadelphia</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/TastyCity.png" class="card-img-top" alt="Imagen-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Tasticity</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    
+        
+    
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/Completa.png" class="card-img-top" alt="Imagen-1">
+                  <div class="card-body">
+                    <h5 class="card-title">Completa</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/Philadelphia.png" class="card-img-top" alt="Imagen-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Philadelphia</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/TastyCity.png" class="card-img-top" alt="Imagen-3">
+                  <div class="card-body">
+                    <h5 class="card-title">TastyCity</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+           
+        <div class="container py-3">
+          <div class="row">
+            <div class="col-sm-11" id="confCerveza">
+
+        <img src="../img/cervezas-para-todos-los-gustos___GfZq8xFno_1200x630__1.jpg" class="w-100">
+        
+      </div>
+        </div>
+          </div>
+<div class="container py-4" >
+  <div class="row">
+    <div class="col-sm-3" >
+    <!-- Small modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm" id="boton1">L A R G E R</button>
+
+<div class="modal fade bd-example-modal-sm mover" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true"  >
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content centrar">
+      Lager es un tipo de cerveza con sabor acentuado,
+      caracterizada por fermentar en condiciones más lentas empleando levaduras especiales 
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-3" >
+<!-- Small modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm2" id="boton2">T I P O  A L E</button>
+
+<div class="modal fade bd-example-modal-sm2 mover" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content centrar" >
+      Esta Cerveza enfatiza la malta, dulce y redondeado.
+      De color oscuro rojizo, con leves notas de la malta tostada,
+      es una ale fuerte, con carácter a malta, típico de las Scottish ales, con alta complejidad de flavors. 
+    </div>
+  </div>
+</div>
+    </div>
+<!-- Small modal -->
+    <div class="col-sm-3" >
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm3" id="boton3">H O N N E Y</button>
+
+<div class="modal fade bd-example-modal-sm3 mover" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content centrar">
+      De color dorado es un estilo muy accesible, incorpora la miel en su proceso de elaboración
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-3" >
+<!-- Small modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm4" id="boton4">P O R T E R</button>
+
+<div class="modal fade bd-example-modal-sm4 mover" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content centrar">
+      Porter es un estilo de cerveza oscura desarrollado en Londres a partir de cebada malteada marrón.
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+  
+   
+      <br><br><br><br>
 
 <!--PIE DE PAGINA-->
-        <footer id="pie">copyright 2021 - diseño y desarrollo - Bartoletti Alesis </footer>
+<footer class="text-center text-white fixed-bottom" style="background-color: black;">
+  <!-- Copyright -->
+  <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright: Bartoletti Alesis.
 
-</section>            
+    <section class="configRed">
+      <!--Facebook -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      
+      <!--Whatsapp-->
+
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+
+    </section>
+    
+  </div>
+  
+</footer>
+
+
+            
         
 <!--FIN DE GRID-->
         
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
