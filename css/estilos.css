@@ -133,7 +133,8 @@
     color: white;
     text-align: center;
     font-family: 'Teko', sans-serif;
-    align-content: center; 
+    align-content: center;
+    text-shadow: 0 0 5px, 0 0 5px #0000FF; 
 }
       
   
@@ -161,10 +162,12 @@
     #h1-beer{
         margin-top: 10%;
         font-size: 75px;
+        margin-right: 70px;
         color: white;
         text-align: center;
         font-family: 'Teko', sans-serif;
         align-content: center;
+        text-shadow: 0 0 5px, 0 0 5px #0000FF;
            
     }   
   #confCerveza{
@@ -196,6 +199,7 @@ background-color: black;
     
     
 }
+
  
   .card {
     position: relative;
@@ -248,6 +252,7 @@ background-color: black;
     text-align: center;
     font-family: 'Teko', sans-serif;
     align-content: center;
+    text-shadow: 0 0 5px, 0 0 5px #0000FF;
   }
   .card-text{
       margin-top: 5%;
@@ -338,6 +343,7 @@ background-color: black;
     color: white;
     font-family: 'Teko', sans-serif;
     padding-right: 76%;
+    text-shadow: 0 0 5px, 0 0 5px #0000FF;
     
    
 }
@@ -655,6 +661,27 @@ display: none;
         margin-left: 35%;
         background-color: black;
     } 
+    #moverBeer{
+        margin-left: 0px;
+        
+        padding-left: 100px;
+       
+    }
+
+    #h1-beer{
+        
+        font-size: 50px;
+    }
+    #h1-Nosotros{
+        font-size: 50px;
+    }
+    #h1-delivery{
+        font-size: 50px;
+    }
+    #h1-reserva{
+        font-size: 50px;
+        margin-right: 55px;
+    }
 
 /*BOTON DE MENU-CARTA DELIVERY*/
     #estiloBotonMenu{
@@ -666,8 +693,8 @@ display: none;
      #moverBotonMenu{
          padding-right: 25%;
      }
-
-
+   
+     
 
 }
 
@@ -796,3 +823,7 @@ display: none;
 
 
 
+.heading{
+    color:#ccc;
+    
+}
