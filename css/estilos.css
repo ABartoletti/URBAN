@@ -220,10 +220,15 @@ background-color: black;
   .card-title {
     margin-bottom: 0.75rem;
     color: white;
+    font-size: 170%;
+    text-shadow: 0 0 5px, 0 0 5px #0000FF;
   }
   .card-text {
     color: white;
     
+  }
+  #tamañoCardHamburguesa{
+    width: 18rem;
   }
   
   
@@ -663,10 +668,10 @@ display: none;
     } 
     #moverBeer{
         margin-left: 0px;
-        
         padding-left: 100px;
        
     }
+
 
     #h1-beer{
         
@@ -681,6 +686,12 @@ display: none;
     #h1-reserva{
         font-size: 50px;
         margin-right: 55px;
+    }
+    #confCerveza{
+        margin-left: 0%;
+        border: solid 5px black;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
 /*BOTON DE MENU-CARTA DELIVERY*/
@@ -756,6 +767,16 @@ display: none;
        #tamañoTabletRerva{
            height: 110vh;
        }
+
+       #tamañoCardHamburguesa{
+           width: 14.7rem;
+       }
+       .card-title{
+        font-size: 130%;
+        text-align:left;
+
+    }
+
     }
 
 
@@ -820,10 +841,9 @@ display: none;
     color: #5793ef;
     transition: all 0.5s ease 0s;
 }
-
-
-
 .heading{
     color:#ccc;
     
 }
+
+
