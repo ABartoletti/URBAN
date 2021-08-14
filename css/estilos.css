@@ -20,7 +20,7 @@
     margin-left: auto;
     margin-right: auto;
     transition: 2s;
-    margin-top: 5%;
+    margin-top: 10%;
     
 }
   /*CONFIGURAR LOGO DEL MENU*/
@@ -76,20 +76,9 @@
 
   
   
-  .aplicarGrid {
-    display: grid;
-    grid-template-areas: "cabeza   cabeza     cabeza"
-   "parrafo1   parrafo1    parrafo1"
-   "carrousel       carrousel        carrousel"
-   "pie        pie         pie";
-    grid-template-rows: 0fr 0fr 1fr 0fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 0 px;
-    grid-row-gap: 0 px;
-    height: 140vh; }
   
-  header {
-    grid-area: cabeza; }
+    
+  
   
   #carrousel {
     grid-area: carrousel;
@@ -170,38 +159,38 @@
         text-shadow: 0 0 5px, 0 0 5px #0000FF;
            
     }   
-  #confCerveza{
+    #confCerveza{
       margin-left: 1.5%;
       border: solid 5px black;
       padding-left: 0px;
       padding-right: 0px;
   }
-#boton1{
+    #boton1{
 margin-left: 50%;
 background-color: black;
 }
-#boton2{
+    #boton2{
     margin-left: 40%;
     background-color: black;
     
 }
-#boton3{
+    #boton3{
     margin-left: 10%;  
     background-color: black;
     
 }
-#boton4{
+    #boton4{
     margin-right: 50%;
     background-color: black;
 } 
-.mover{
+    .mover{
     margin-top: 200px;
     
     
 }
 
  
-  .card {
+    .card {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -217,39 +206,25 @@ background-color: black;
     border: 5px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
   }
-  .card-title {
+    .card-title {
     margin-bottom: 0.75rem;
     color: white;
     font-size: 170%;
     text-shadow: 0 0 5px, 0 0 5px #0000FF;
   }
-  .card-text {
+    .card-text {
     color: white;
     
   }
-  #tamañoCardHamburguesa{
+    #tamañoCardHamburguesa{
     width: 18rem;
   }
   
   
   /*BLOQUE DE SECCION DELIVERY&TAKE AWAY*/
-  .aplicarGrid-delivery{
-      display: grid;
-      grid-template-areas: 
-      "cabeza   cabeza     cabeza" /* 1er fila */
-      "h1-delivery        h1-delivery     h1-delivery"/* 2da fila*/
-      "parrafowsp       parrafowsp     parrafowsp" /*3ra fila*/
-      "wsp   wsp    wsp"/*4ta fila*/
-      "parrafoMapa       parrafoMapa        parrafoMapa"/*5ta fila*/
-       "mapa        mapa         mapa"/*6ta fila*/
-       "pie           pie         pie"/*7ma fila*/;
-      grid-template-rows: 0fr 1fr 0.5fr 1fr 0.5fr 1fr 0fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 5px;
-      grid-row-gap: 1px;
-      height: 120vh;
+  
       
-  }
+  
   #h1-delivery{
     margin-top: 12%;
     font-size: 75px;
@@ -264,60 +239,30 @@ background-color: black;
       text-align: center;
       
   }
-  .card-title{
+    .card-title{
       margin-top: 15%;
       margin-left: 30%;
   }
-  #estiloBotonMenu{
+    #estiloBotonMenu{
       background-color: black;
       color: blanchedalmond;
       width: 50vh;
       margin-left: 28%;
    }
-  #textoCard{
+    #textoCard{
       font-size: 100px;
   }
 
   
-  #moverTextMap{
-      margin-left: 20%;
-      font-size: 20px;
-  }
+    
   
-  #posicionMapa{
-  margin-top: 3.1%;  
-  
-}
-#ignorarDesktop{
-    display: none;
-}
 
 
-  #parrafowsp{
-      grid-area: parrafowsp;
-      text-align: center;
-      color: white;
-  }
-  #bloque-wsp{
-      grid-area: wsp;
-      display: flex;
-      justify-content: center;
-  }
-  #parrafoMapa{
-      grid-area: parrafoMapa;
-      text-align: center;
-      padding-top: 30px;
-      color: white;
-  }
-  #bloque-mapa{
-      display: flex;
-      grid-area: mapa;
-      justify-content: center;
-      padding-bottom: 100px;
-  }
+  
+ 
   /*BLOQUE DE SECCION RESERVA*/
   
-  COLOR Y FORMATO AL FORMULARIO*/
+  
   #ColorFormulario {
       padding: 0;
       width: 30%;
@@ -327,20 +272,7 @@ background-color: black;
       color:black;
       font-style: italic;
   }
-  .aplicarGrid-reserva{
-      display: grid;
-      grid-template-areas: 
-      "cabeza   cabeza     cabeza" 
-      "h1-reserva        h1-reserva       h1-reserva"
-      "formulario       formulario     formulario"
-      "pie   pie    pie";
   
-      grid-template-rows: 0.5fr 0fr 1fr 0fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 5px;
-      grid-row-gap: 5px;
-      height: 120vh;
-  }
   
     #h1-reserva{
     padding-top: 20%;
@@ -352,188 +284,30 @@ background-color: black;
     
    
 }
-
-
-
-
-  /*smartphone INDEX*/
-  @media(max-width: 480px){
-      .aplicarGrid{
-          display: grid;
-          grid-template-areas: 
-          "cabeza   cabeza     cabeza" /* 1er fila */
-          "parrafo1   parrafo1    parrafo1"/*2da fila*/
-          "carrousel       carrousel        carrousel"/*3ra fila*/
-           "pie        pie         pie";/*4ta fila*/
-          grid-template-rows: 1fr 1fr 5fr 0fr;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-column-gap: 5px;
-          grid-row-gap: 5px;
-          
-          height: 100vh;
-      }
-      #carrousel{
-          grid-area: carrousel;
-          width: 70%;
-          margin-left: 15%;
-  
-          
-      }
-      #confLogoBar{
-          width: 100px;
-          height: 100px;
-          border-radius: 50%;
-          display: none;
-      }
-      footer{
-          padding-bottom: 0%;
-          text-align: center;
-          
-      }
-      .ocultar{
-          display: none;
-      }
-      
-      
-      
-      header{
-          margin-left: 19px;
-          padding-bottom: 28px;
-          margin-right: 74.5%;
-          
-      }
-  
-      .menu{ 
-          display: flex;
-          margin: 0;
-          list-style: none;
-          padding: 0%;
-          justify-content: center;
-          flex-wrap: wrap; /*AL CORRER LA PANTALLA ME VA AJUSTANDO LAS OPCIONES DEL MENU PARA AJUSTARSE A LA PANTALLA*/
-          flex-direction: row;
-          
-          /*flex flex-flow: row wrap; /*habrevio flex-wrap y flex-direction con esta opcion*/
-      
-      }
-      .menu li a{
-          display: flex;
-          padding: 10px;
-          color:black;
-          font-size: 200%;
-          font-weight: bold;/*negrita*/
-          align-content: center;
-          /*border-style: double;/*bordes sobre los bloques del menu*/
-          text-decoration: none;
-          /*background-color: black;*/
-          font-style: italic;
-          color: white;
-          font-family: 'Teko', sans-serif;
-          position: relative;
-      }
-      #ajusteLogo{
-          border-radius: 50%;
-          display: block;
-          margin-left: 105px;
-          /*margin-right: auto;*/
-          width: 100px;
-          height: 100px;
-          
-      }
-  
-      #modificarImg1{
-          height: 200px;  
-          width: 700px; 
-          border: solid 3px black;
-      }
-      
-      #img2{
-          grid-area: img2;
-          /*background-color: tan;*/
-          text-align: center;
-          
-          
-      
-      }
-      #modificarImg2{
-         border: solid 3px black;
-         height: 200px;  
-         width: 700px; 
-      }
-      #img3{
-          grid-area: img3;
-          /*background-color: yellow;*/
-          text-align: center
-      }
-      #modificarImg3{
-          height: 200px;  
-          width: 700px; 
-          border: solid 3px black;
-      }
-  
-  
-  
-  }
-  
-/*Tablet INDEX*/
-@media (min-width: 600px) and (max-width: 1023px) {
-      
-/* GRID AREAS */
-    .grillaAreas {
-          display: grid;
-          grid-template-areas: 
-          "cabeza   cabeza     cabeza" /* 1er fila */
-          "parrafo1 parrafo1 parrafo1"
-          "img1 img2 img3" /* 2da fila */
-          "pie       pie      pie"    /* 4ta fila */
-          ;
-          grid-template-rows: 1fr 1fr 1fr 1fr;
-          grid-template-columns: 1fr 1fr 1fr;
-          height: 80vh;}
-      
-    #parrafoIndex{
-          grid-area: parrafo1;
-    }
-    #ajusteLogo{
-          border-radius: 50%;
-          display: block;
-          margin-left: 40%;
-          margin-right: auto;
-          width: 150px;
-          height: 150px;
-    }
-  
-    #modificarImg1{
-        height: 400px;  
-        width: 1000px; 
-        border: solid 3px black;
-    }
-      
-    #img2{
-        grid-area: img2;
-        /*background-color: tan;*/
-        text-align: center;
-    }
-    #modificarImg2{
-         border: solid 3px black;
-         height: 400px;  
-          width: 1000px; 
-    }
-    #img3{
-        grid-area: img3;
-        /*background-color: yellow;*/
-        text-align: center
-    }
-    #modificarImg3{
-        height: 400px;  
-        width: 1000px;  
-        border: solid 3px black;
-    }
-    
-  
-  
-  
+    #parrafoMapa{
+    grid-area: parrafoMapa;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
 }
-/*FIN MEDIAQUERY INDEX*/
+    #bloque-mapa{
+    display: flex;
+    grid-area: mapa;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+    #posicionMapa{
+    margin-top: 3.1%;  
+    
+}
+      #ignorarDesktop{
+      display: none;
+}
+
+
+ 
+  
 
 
   
@@ -590,7 +364,87 @@ background-color: black;
 
 /*MEDIA QUERY GENERAL PARA SMARTPHONE*/
 @media(max-width: 480px){
-#video{
+
+    #carrousel{
+        grid-area: carrousel;
+        width: 70%;
+        margin-left: 15%;
+
+        
+    }
+    #confLogoBar{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: none;
+    }
+    .menu{ 
+        display: flex;
+        margin: 0;
+        list-style: none;
+        padding: 0%;
+        justify-content: center;
+        flex-wrap: wrap; /*AL CORRER LA PANTALLA ME VA AJUSTANDO LAS OPCIONES DEL MENU PARA AJUSTARSE A LA PANTALLA*/
+        flex-direction: row;
+        
+        /*flex flex-flow: row wrap; /*habrevio flex-wrap y flex-direction con esta opcion*/
+    
+    }
+    .menu li a{
+        display: flex;
+        padding: 10px;
+        color:black;
+        font-size: 200%;
+        font-weight: bold;/*negrita*/
+        align-content: center;
+        /*border-style: double;/*bordes sobre los bloques del menu*/
+        text-decoration: none;
+        /*background-color: black;*/
+        font-style: italic;
+        color: white;
+        font-family: 'Teko', sans-serif;
+        position: relative;
+    }
+    #ajusteLogo{
+        border-radius: 50%;
+        display: block;
+        margin-left: 105px;
+        /*margin-right: auto;*/
+        width: 100px;
+        height: 100px;
+        
+    }
+
+    #modificarImg1{
+        height: 200px;  
+        width: 700px; 
+        border: solid 3px black;
+    }
+    
+    #img2{
+        grid-area: img2;
+        /*background-color: tan;*/
+        text-align: center;
+        
+        
+    
+    }
+    #modificarImg2{
+       border: solid 3px black;
+       height: 200px;  
+       width: 700px; 
+    }
+    #img3{
+        grid-area: img3;
+        /*background-color: yellow;*/
+        text-align: center
+    }
+    #modificarImg3{
+        height: 200px;  
+        width: 700px; 
+        border: solid 3px black;
+    }
+    #video{
     grid-area: video;
       width: 300px;
       height: 300px;
@@ -693,6 +547,7 @@ display: none;
         padding-left: 0px;
         padding-right: 0px;
     }
+    
 
 /*BOTON DE MENU-CARTA DELIVERY*/
     #estiloBotonMenu{
@@ -711,8 +566,50 @@ display: none;
 
 /*MEDIA QUERY GENERAL PARA TABLET*/
 @media (min-width: 600px) and (max-width: 1024px) {
+    
+ 
+    #ajusteLogo{
+        border-radius: 50%;
+        display: block;
+        margin-left: 40%;
+        margin-right: auto;
+        width: 150px;
+        height: 150px;
+  }
 
-    #video{
+    #modificarImg1{
+      height: 400px;  
+      width: 1000px; 
+      border: solid 3px black;
+  }
+    
+    #img2{
+      grid-area: img2;
+      /*background-color: tan;*/
+      text-align: center;
+  }
+    #modificarImg2{
+       border: solid 3px black;
+       height: 400px;  
+        width: 1000px; 
+  }
+    #img3{
+      grid-area: img3;
+      /*background-color: yellow;*/
+      text-align: center
+  }
+    #modificarImg3{
+      height: 400px;  
+      width: 1000px;  
+      border: solid 3px black;
+  }
+  
+    
+    
+    
+    
+    
+        #video{
         grid-area: video;
           width: 600px;
           height: 600px;
@@ -724,16 +621,18 @@ display: none;
       }
 
 
-    
+        #tamañoIndex{
+        height: 160vh;
+    }
 
-    #tamañoTablet{
+        #tamañoTablet{
         height: 190vh;
     }
-    #moverBotonMenu{
+        #moverBotonMenu{
         padding-right: 48%;
     }
 
-    #posicionMapa{
+        #posicionMapa{
         margin-top: 3.9%;  
         width: 400px;
         
@@ -767,20 +666,52 @@ display: none;
        #tamañoTabletRerva{
            height: 110vh;
        }
-
-       #tamañoCardHamburguesa{
-           width: 14.7rem;
+       #tamañoBeerBurger{
+            height: 220vh;
        }
+
+
+      
        .card-title{
         font-size: 130%;
         text-align:left;
 
     }
+        #confCerveza{
+        margin-left: 4%;
+    }
+        #h1-beer{
+        margin-left: 8%;
+    }
+    
 
     }
-
-
-
+    @media (min-width: 500px) and (max-width: 1023px) {
+    #tamañoCardHamburguesa{
+        width: 13.1rem;
+        }
+    .card-text{
+        font-size: 85%;
+    }
+    #posicionMapa{
+        display: none;
+    }
+    #h1-reserva{
+        font-size: 55px;
+    }
+    #confCerveza{
+        margin-left: 5%;
+    }
+    #h1-beer{
+        margin-left: 10%;
+    }
+    #tamañoTabletRerva{
+        height: 125vh;
+    }
+    #tamañoIndex{
+        height: 160vh;
+    }
+    }
 
 /*ESTILOS DEL FORM SECION RESERVA*/
 .form_main {
