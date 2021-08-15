@@ -78,7 +78,7 @@
   
   
     
-  
+/*BLOQUE DE SECCION INDEX*/ 
   
   #carrousel {
     grid-area: carrousel;
@@ -104,17 +104,22 @@
     border: solid 3px black;
     transition: 2s; }
   
-  #modificarImg3 {
-    height: 500px;
-    width: 400px;
-    border: solid 3px black;
-    transition: 2s; }
+    #modificarImg3 {
+        height: 500px;
+        width: 400px;
+        border: solid 3px black;
+        transition: 2s; }
+    #modificarImg4 {
+        height: 500px;
+        width: 400px;
+        border: solid 3px black;
+        transition: 2s; }
    
   
   
  
   
-  /*BLOQUE DE SECCION NOSOTROS*/
+/*BLOQUE DE SECCION NOSOTROS*/
   
   #h1-Nosotros{
     margin-top: 12%;
@@ -144,7 +149,7 @@
       background-image: url(../img/Back.jpg);
   }
   
-  /*BLOQUE DE SECCION BEER&BURGER*/
+/*BLOQUE DE SECCION BEER&BURGER*/
   
   
   
@@ -166,25 +171,25 @@
       padding-right: 0px;
   }
     #boton1{
-margin-left: 50%;
-background-color: black;
+        margin-left: 50%;
+        background-color: black;
 }
     #boton2{
-    margin-left: 40%;
-    background-color: black;
+        margin-left: 40%;
+        background-color: black;
     
 }
     #boton3{
-    margin-left: 10%;  
-    background-color: black;
+        margin-left: 10%;  
+        background-color: black;
     
 }
     #boton4{
-    margin-right: 50%;
-    background-color: black;
+        margin-right: 50%;
+        background-color: black;
 } 
     .mover{
-    margin-top: 200px;
+        margin-top: 200px;
     
     
 }
@@ -262,7 +267,70 @@ background-color: black;
  
   /*BLOQUE DE SECCION RESERVA*/
   
-  
+  /*ESTILOS DEL FORM SECION RESERVA*/
+.form_main {
+    width: 100%;
+   
+}
+.form_main h4 {
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.heading {
+    border-bottom: 1px solid #fcab0e;
+    padding-bottom: 9px;
+    position: relative;
+}
+.heading span {
+    background: #9e6600 none repeat scroll 0 0;
+    bottom: -2px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 75px;
+}   
+.form {
+    border-radius: 7px;
+    padding: 6px;
+}
+.txt[type="text"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.txt_3[type="text"] {
+    margin: 10px 0 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.txt2[type="submit"] {
+    background: #242424 none repeat scroll 0 0;
+    border: 1px solid #4f5c04;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 35px;
+    margin: 10px 0;
+    padding: 0;
+    text-transform: uppercase;
+    width: 30%;
+}
+.txt2:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #5793ef;
+    transition: all 0.5s ease 0s;
+}
+.heading{
+    color:#ccc;
+}
+
+
   #ColorFormulario {
       padding: 0;
       width: 30%;
@@ -444,6 +512,11 @@ background-color: black;
         width: 700px; 
         border: solid 3px black;
     }
+    #modificarImg4{
+        height: 200px;  
+        width: 700px; 
+        border: solid 3px black;
+    }
     #video{
     grid-area: video;
       width: 300px;
@@ -455,14 +528,14 @@ background-color: black;
       background-image: url(../img/Back.jpg);
   }
 
-#navbarNav{
+    #navbarNav{
     background-color: black;
 }
 
-#h1-reserva{
+    #h1-reserva{
     padding-right: 20%;
 }
-.card {
+    .card {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -479,30 +552,30 @@ background-color: black;
     border-radius: 0.25rem;
     margin-left: 8%;
   }
- #distancia{
+    #distancia{
      padding-bottom: 35%;
  }
   
- h4{
+    h4{
     text-align: center;
     margin-right: 30%;
 }
 
-#moverPedidosYa{
+    #moverPedidosYa{
     padding-right: 40px;
 }
-#moverTextMap{
+    #moverTextMap{
     text-align: center;
     padding-right:20%;
 }
-#posicionMapa{
+    #posicionMapa{
 display: none;
 }
-.tamañoSmartphone{
+    .tamañoSmartphone{
     height: 180vh;
 }
 /*BOTONES DE BLOQUE CERVEZAS EN SECCION BEER&BURGER*/
-#boton1{
+    #boton1{
     margin-left: 35%;
     background-color: black;
     }
@@ -599,10 +672,15 @@ display: none;
       text-align: center
   }
     #modificarImg3{
-      height: 400px;  
-      width: 1000px;  
-      border: solid 3px black;
+        height: 400px;  
+        width: 1000px;  
+        border: solid 3px black;
   }
+    #modificarImg4{
+        height: 400px;  
+        width: 1000px;  
+        border: solid 3px black;
+}
   
     
     
@@ -622,16 +700,24 @@ display: none;
 
 
         #tamañoIndex{
-        height: 160vh;
+        height: 115vh;
     }
 
+    #tamañoNosotros{
+        height: 115vh;
+    }
         #tamañoTablet{
         height: 190vh;
     }
         #moverBotonMenu{
-        padding-right: 48%;
+        margin-left: 5%;
     }
-
+    #estiloBotonMenu{
+        background-color: black;
+        color: blanchedalmond;
+        width: 25vh;
+        padding-left: 0%;
+     }
         #posicionMapa{
         margin-top: 3.9%;  
         width: 400px;
@@ -709,72 +795,19 @@ display: none;
         height: 125vh;
     }
     #tamañoIndex{
-        height: 160vh;
+        height: 135vh;
     }
     }
-
-/*ESTILOS DEL FORM SECION RESERVA*/
-.form_main {
-    width: 100%;
-   
-}
-.form_main h4 {
-    font-family: roboto;
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 15px;
-    margin-top: 20px;
-    text-transform: uppercase;
-}
-.heading {
-    border-bottom: 1px solid #fcab0e;
-    padding-bottom: 9px;
-    position: relative;
-}
-.heading span {
-    background: #9e6600 none repeat scroll 0 0;
-    bottom: -2px;
-    height: 3px;
-    left: 0;
-    position: absolute;
-    width: 75px;
-}   
-.form {
-    border-radius: 7px;
-    padding: 6px;
-}
-.txt[type="text"] {
-    border: 1px solid #ccc;
-    margin: 10px 0;
-    padding: 10px 0 10px 5px;
-    width: 100%;
-}
-.txt_3[type="text"] {
-    margin: 10px 0 0;
-    padding: 10px 0 10px 5px;
-    width: 100%;
-}
-.txt2[type="submit"] {
-    background: #242424 none repeat scroll 0 0;
-    border: 1px solid #4f5c04;
-    border-radius: 25px;
-    color: #fff;
-    font-size: 16px;
-    font-style: normal;
-    line-height: 35px;
-    margin: 10px 0;
-    padding: 0;
-    text-transform: uppercase;
-    width: 30%;
-}
-.txt2:hover {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    color: #5793ef;
-    transition: all 0.5s ease 0s;
-}
-.heading{
-    color:#ccc;
+    @media (width: 768px){
+        #moverBotonMenu{
+            margin-left: 5%;
+        }
+        #estiloBotonMenu{
+            background-color: black;
+            color: blanchedalmond;
+            width: 40vh;
+            padding-left: 0%;
+         }
+    }
     
-}
-
-
+   
