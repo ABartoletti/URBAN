@@ -220,7 +220,11 @@
     #tamañoCardHamburguesa{
     width: 18rem;
   }
-  
+  #tamañoVentana{
+    width: 380px;
+    height: 100px;
+    
+}
   
   /*BLOQUE DE SECCION DELIVERY&TAKE AWAY*/
   
@@ -526,6 +530,7 @@
 
     #navbarNav{
     background-color: black;
+    
 }
 
     #h1-reserva{
@@ -569,7 +574,11 @@ display: none;
 }
     .tamañoSmartphone{
     height: 180vh;
+    
 }
+
+
+
 /*BOTONES DE BLOQUE CERVEZAS EN SECCION BEER&BURGER*/
     #boton1{
     margin-left: 35%;
@@ -594,11 +603,14 @@ display: none;
         padding-left: 100px;
        
     }
-
+    
+    
+    
 
     #h1-beer{
         
         font-size: 50px;
+        
     }
     #h1-Nosotros{
         font-size: 50px;
@@ -615,8 +627,20 @@ display: none;
         border: solid 5px black;
         padding-left: 0px;
         padding-right: 0px;
+        
     }
+    #tamañoBloqueImgCerveza{
+        width: 95%;
+        
+    }
+   #tamañoVentana{
+       width: 350px;
+       height: 100px;
+   }
+   
     
+        
+
 
 /*BOTON DE MENU-CARTA DELIVERY*/
     #estiloBotonMenu{
@@ -631,7 +655,7 @@ display: none;
    
      
 
-}
+    }
 
 /*MEDIA QUERY GENERAL PARA TABLET*/
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -695,7 +719,7 @@ display: none;
       }
 
 
-        #tamañoIndex{
+    #tamañoIndex{
         height: 125vh;
     }
 
