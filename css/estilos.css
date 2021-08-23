@@ -1,20 +1,147 @@
-* {
+*{
     margin: 0;
-    padding: 0; }
-  
-  html {
-    font-size: 100%;
-    font-family: 'Oswald', sans-serif; }
-  
-  body{
-      background-position: center center;
-      background-size: cover;
-      background-image: url(../img/fondo1\ \(2\).jpg);
-      height: 140vh;
+    padding: 0;
+   
+}
 
+    html {
+        font-size: 100%;
+        font-family: 'Oswald', sans-serif;
+        
     }
+
     
-  #ajusteLogo {
+
+    body{
+        background-image: url(../img/fondo1\ \(2\).jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    p {
+        font-style: oblique;
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 700px;
+        font-family: 'Teko', sans-serif;
+        align-content: center;
+        margin-top: 5%; }
+      
+    
+    h2 {
+        text-align: center; }
+/*-----------------CONFIGURACION DE FOOTER---------------------*/
+.fab{
+    width: 50px;
+    text-align: center;
+    font-size: 24px;
+    
+}
+.social{
+    position: fixed;
+    right: 0%;
+    top: 0px;
+}
+.social ul{
+    list-style: none;
+    padding: 10px;
+}
+.social a{
+    display:inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    z-index: 0;
+    transition: 0.1s ease;
+}
+.social a:hover{
+    padding: 10px 25px;
+}
+.configRed{
+    display:flex;
+    
+}
+
+.text-center {
+    text-align: center !important;
+    font-size: 15px;
+}
+
+
+.fab{
+    width: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+.social{
+    position: fixed;
+    right: 0%;
+    top: 0px;
+}
+.social ul{
+    list-style: none;
+    padding: 10px;
+}
+.social a{
+    display:inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    z-index: 0;
+    transition: 0.1s ease;
+}
+.social a:hover{
+    padding: 10px 25px;
+}
+.configRed{
+    display:inline-block;
+    
+}
+.configuracionFooter{
+    margin-top: 15%;
+    
+}
+.estiloFooterDelivery{
+    margin-top: 15%;
+    
+    
+}
+
+/*--------------CONFIGURAR LOGO DEL MENU-------------*/
+    #confLogoBar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    #navbarNav a {
+        text-shadow: 0 0 5px, 0 0 5px #0000FF;
+    }
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap; }
+    
+    #ajusteLogo:hover {
+    transform: rotate(360deg); 
+    
+}
+/*--------------CONFIGURAR MENU--------------*/
+    .configurar {
+    font-size: 25px;
+}    
+    #ajusteLogo {
     border-radius: 50%;
     width: 320px;
     height: 317px;
@@ -25,101 +152,63 @@
     margin-top: 10%;
     
 }
-  /*CONFIGURAR LOGO DEL MENU*/
-  #confLogoBar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; }
-  
-/*CONFIGURAR MENU*/
-  .configurar {
-    font-size: 25px;
-}
-#navbarNav a {
-    text-shadow: 0 0 5px, 0 0 5px #0000FF;
-}
-  
-  .navbar-brand {
-    display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap; }
-  
-  #ajusteLogo:hover {
-    transform: rotate(360deg); }
-  
-  p {
-    font-style: oblique;
-    font-weight: bold;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-}
-  
-    .centrar{
-    text-align: center;
-      
-  }
-  
-  h1 {
-    color: white;
-    text-align: center;
-    font-size: 700px;
-    font-family: 'Teko', sans-serif;
-    align-content: center;
-    margin-top: 5%; }
-  
 
-  h2 {
-    text-align: center; }
-
-  
-  
-  
-    
-/*BLOQUE DE SECCION INDEX*/ 
-  
-  #carrousel {
-    grid-area: carrousel;
-    height: 50%;
-    width: 50%;
-    margin-left: 25%; }
-  
-  #parrafoIndex {
+    #parrafoIndex {
     grid-area: parrafo1;
     text-align: center; 
     font-size: 30px;
 }
-  
-  #modificarImg1 {
-    height: 500px;
-    width: 400px;
-    border: solid 3px black;
-    transition: 2s; }
-  
-  #modificarImg2 {
-    height: 500px;
-    width: 400px;
-    border: solid 3px black;
-    transition: 2s; }
-  
-    #modificarImg3 {
-        height: 500px;
-        width: 400px;
-        border: solid 3px black;
-        transition: 2s; }
+
+    #carrousel {
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
     
-  
- 
-  
-/*BLOQUE DE SECCION NOSOTROS*/
-  
-  #h1-Nosotros{
-    margin-top: 12%;
-    font-size: 75px;
+}
+
+
+
+
+
+
+
+/*-----------------MEDIA QUERY SMARTPHONE----------------*/
+@media screen and (max-width: 400px){
+    #ajusteLogo {
+        border-radius: 50%;
+        width: 220px;
+        height: 217px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 2s;
+        margin-top: 25%;
+        
+    }
+    #confLogoBar{
+        display: none;
+    }
+    #navbarNav{
+        background-color: black;
+        
+    }
+    .moverBotonesCervezas{
+       padding-left: 20%;
+        
+    }
+
+}
+
+/*---------------SECCION NOSOTROS--------------------*/
+
+video{
+    width: 100%;
+}
+
+#h1-Nosotros{
+    margin-top: 15%;
+    font-size: 10vh;
     color: white;
     text-align: center;
     font-family: 'Teko', sans-serif;
@@ -128,147 +217,146 @@
 }
       
   
-  #parrafo-Nosotros{
+#parrafo-Nosotros{
       grid-area: parrafo;
       text-align: center;
       font-size: 35px;
       color:white;
-  }
-  #video{
-      grid-area: video;
-      width: 1000px;
-      height: 600px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 100px;
-      background-image: url(../img/Back.jpg);
-  }
-  
-/*BLOQUE DE SECCION BEER&BURGER*/
-  
-  
-  
-    #h1-beer{
-        margin-top: 10%;
-        font-size: 75px;
-        margin-right: 70px;
-        color: white;
-        text-align: center;
-        font-family: 'Teko', sans-serif;
-        align-content: center;
-        text-shadow: 0 0 5px, 0 0 5px #0000FF;
-           
-    }   
-    #confCerveza{
-      margin-left: 1.5%;
-      border: solid 5px black;
-      padding-left: 0px;
-      padding-right: 0px;
-  }
-    #boton1{
-        margin-left: 50%;
-        background-color: black;
-}
-    #boton2{
-        margin-left: 40%;
-        background-color: black;
-    
-}
-    #boton3{
-        margin-left: 10%;  
-        background-color: black;
-    
-}
-    #boton4{
-        margin-right: 50%;
-        background-color: black;
-} 
-    .mover{
-        margin-top: 200px;
-    
-    
-}
+    }
 
- 
-    .card {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-image: url(../img/fondo1\ \(4\).jpg);
-    background-clip: border-box;
-    border: 5px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-  }
-    .card-title {
-    margin-bottom: 0.75rem;
-    color: white;
-    font-size: 170%;
-    text-shadow: 0 0 5px, 0 0 5px #0000FF;
-  }
-    .card-text {
-    color: white;
-    
-  }
-    #tamañoCardHamburguesa{
-    width: 18rem;
-  }
-  #tamañoVentana{
-    width: 380px;
-    height: 100px;
-    
-}
-  
-  /*BLOQUE DE SECCION DELIVERY&TAKE AWAY*/
-  
-      
-  
-  #h1-delivery{
-    margin-top: 12%;
+/*-------------SECCION BEER&BURGER-------------------*/
+
+#h1-beer{
+    margin-top: 10%;
     font-size: 75px;
     color: white;
     text-align: center;
     font-family: 'Teko', sans-serif;
     align-content: center;
     text-shadow: 0 0 5px, 0 0 5px #0000FF;
-  }
-  .card-text{
-      margin-top: 5%;
-      text-align: center;
-      
-  }
-    .card-title{
-      margin-top: 15%;
-      margin-left: 30%;
-  }
-    #estiloBotonMenu{
-      background-color: black;
-      color: blanchedalmond;
-      width: 50vh;
-      margin-left: 28%;
-   }
-    #textoCard{
-      font-size: 100px;
-  }
-
+       
+}   
+#confCerveza{
   
+  border: solid 5px black;
+  padding-left: 0px;
+  padding-right: 0px;
+  
+}
+#boton1{
     
-  
+    background-color: black;
+}
+#boton2{
+    
+    background-color: black;
+
+}
+#boton3{
+      
+    background-color: black;
+
+}
+#boton4{
+    
+    background-color: black;
+} 
 
 
+
+.card {
+position: relative;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+min-width: 0;
+word-wrap: break-word;
+background-image: url(../img/fondo1\ \(4\).jpg);
+background-clip: border-box;
+border: 5px solid rgba(0, 0, 0, 0.125);
+border-radius: 0.25rem;
+}
+.card-title {
+margin-bottom: 0.75rem;
+color: white;
+font-size: 170%;
+text-shadow: 0 0 5px, 0 0 5px #0000FF;
+}
+.card-text {
+color: white;
+
+}
+
+#tamañoVentana{
+width: 350px;
+height: 100px;
+
+}
+#tamañoBloqueImgCerveza{
+width: 100%;
+}
+.moverBotonesCervezas{
+    margin-left: 10%;
+    
+}
+
+/*----------------BLOQUE DE SECCION DELIVERY&TAKE AWAY-------------------*/
+
+
+
+#h1-delivery{
+margin-top: 12%;
+font-size: 75px;
+color: white;
+text-align: center;
+font-family: 'Teko', sans-serif;
+align-content: center;
+text-shadow: 0 0 5px, 0 0 5px #0000FF;
+}
+.card-text{
+  margin-top: 5%;
+  text-align: center;
   
- 
-  /*BLOQUE DE SECCION RESERVA*/
+}
+.card-title{
+  margin-top: 15%;
+  margin-left: 30%;
+}
+#estiloBotonMenu{
+  background-color: black;
+  color: blanchedalmond;
+  width: 30vh;
+  /*margin-left: 0%;*/
+  justify-content: center;
   
-  /*ESTILOS DEL FORM SECION RESERVA*/
-.form_main {
+}
+.estiloBotonMenu{
+    background-color: blanchedalmond;
+    justify-content: center;
+    
+}
+#moverBotonMenu{
+    width: 100%;
+    justify-content: center;
+}
+
+#textoCard{
+  font-size: 100px;
+  
+}
+
+.estiloCardMenu{
+    margin-top: 5%;
+}
+
+/*-------------------BLOQUE DE SECCION RESERVA-------------------*/
+  
+/*-------------------ESTILOS DEL FORM SECION RESERVA-------------*/
+  .form_main {
     width: 100%;
    
 }
@@ -284,6 +372,10 @@
     border-bottom: 1px solid #fcab0e;
     padding-bottom: 9px;
     position: relative;
+    text-shadow: 0 0 5px, 0 0 5px #0000FF;
+    
+    
+    
 }
 .heading span {
     background: #9e6600 none repeat scroll 0 0;
@@ -292,6 +384,7 @@
     left: 0;
     position: absolute;
     width: 75px;
+    
 }   
 .form {
     border-radius: 7px;
@@ -329,505 +422,20 @@
 .heading{
     color:#ccc;
 }
-
-
-  #ColorFormulario {
-      padding: 0;
-      width: 30%;
-      height: 30%;
-      margin-left: 35%;
-      font-size: 150%;
-      color:black;
-      font-style: italic;
-  }
-  
-  
-    #h1-reserva{
+#h1-reserva{
     padding-top: 20%;
     font-size: 75px;
     color: white;
     font-family: 'Teko', sans-serif;
-    padding-right: 76%;
     text-shadow: 0 0 5px, 0 0 5px #0000FF;
     
    
 }
-    #parrafoMapa{
-    grid-area: parrafoMapa;
-    text-align: center;
-    padding-top: 30px;
-    color: white;
-}
-    #bloque-mapa{
-    display: flex;
-    grid-area: mapa;
-    justify-content: center;
-    padding-bottom: 100px;
-}
-
-    #posicionMapa{
+#posicionMapa{
     margin-top: 3.1%;  
+    width: 100%;
     
 }
-      #ignorarDesktop{
-      display: none;
+.estiloH1Reserva{
+    width: 100%;
 }
-
-
- 
-  
-
-
-  
-.configurar{
-      font-size: 25px;
-      
-}
-.navbar-brand {
-      display: inline-block;
-      padding-top: 0.3125rem;
-      padding-bottom: 0.3125rem;
-      margin-right: 1rem;
-      font-size: 1.25rem;
-      line-height: inherit;
-      white-space: nowrap;
-      
-  }
-  
-#confLogoBar{
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-  }
-
-.fab{
-    width: 50px;
-    text-align: center;
-    font-size: 24px;
-}
-.social{
-    position: fixed;
-    right: 0%;
-    top: 0px;
-}
-.social ul{
-    list-style: none;
-    padding: 10px;
-}
-.social a{
-    display:inline-block;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 15px;
-    z-index: 0;
-    transition: 0.1s ease;
-}
-.social a:hover{
-    padding: 10px 25px;
-}
-.configRed{
-    display:inline-block;
-    
-}
-
-/*MEDIA QUERY GENERAL PARA SMARTPHONE*/
-@media(max-width: 480px){
-
-    #carrousel{
-        grid-area: carrousel;
-        width: 70%;
-        margin-left: 15%;
-
-        
-    }
-    #confLogoBar{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        display: none;
-    }
-    .menu{ 
-        display: flex;
-        margin: 0;
-        list-style: none;
-        padding: 0%;
-        justify-content: center;
-        flex-wrap: wrap; /*AL CORRER LA PANTALLA ME VA AJUSTANDO LAS OPCIONES DEL MENU PARA AJUSTARSE A LA PANTALLA*/
-        flex-direction: row;
-        
-        /*flex flex-flow: row wrap; /*habrevio flex-wrap y flex-direction con esta opcion*/
-    
-    }
-    .menu li a{
-        display: flex;
-        padding: 10px;
-        color:black;
-        font-size: 200%;
-        font-weight: bold;/*negrita*/
-        align-content: center;
-        /*border-style: double;/*bordes sobre los bloques del menu*/
-        text-decoration: none;
-        /*background-color: black;*/
-        font-style: italic;
-        color: white;
-        font-family: 'Teko', sans-serif;
-        position: relative;
-    }
-    #ajusteLogo{
-        border-radius: 50%;
-        display: block;
-        margin-left: 105px;
-        /*margin-right: auto;*/
-        width: 100px;
-        height: 100px;
-        
-    }
-
-    #modificarImg1{
-        height: 200px;  
-        width: 700px; 
-        border: solid 3px black;
-    }
-    
-    #img2{
-        grid-area: img2;
-        /*background-color: tan;*/
-        text-align: center;
-        
-        
-    
-    }
-    #modificarImg2{
-       border: solid 3px black;
-       height: 200px;  
-       width: 700px; 
-    }
-    #img3{
-        grid-area: img3;
-        /*background-color: yellow;*/
-        text-align: center
-    }
-    #modificarImg3{
-        height: 200px;  
-        width: 700px; 
-        border: solid 3px black;
-    }
-    #modificarImg4{
-        height: 200px;  
-        width: 700px; 
-        border: solid 3px black;
-    }
-    #video{
-    grid-area: video;
-      width: 300px;
-      height: 300px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 100px;
-      background-image: url(../img/Back.jpg);
-  }
-
-    #navbarNav{
-    background-color: black;
-    
-}
-
-    #h1-reserva{
-    padding-right: 20%;
-}
-    .card {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-image: url(../img/fondo1\ \(4\).jpg);
-    background-clip: border-box;
-    border: 5px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-    margin-left: 8%;
-  }
-    #distancia{
-     padding-bottom: 35%;
- }
-  
-    h4{
-    text-align: center;
-    margin-right: 30%;
-}
-
-    #moverPedidosYa{
-    padding-right: 40px;
-}
-    #moverTextMap{
-    text-align: center;
-    padding-right:20%;
-}
-    #posicionMapa{
-display: none;
-}
-    .tamañoSmartphone{
-    height: 180vh;
-    
-}
-
-
-
-/*BOTONES DE BLOQUE CERVEZAS EN SECCION BEER&BURGER*/
-    #boton1{
-    margin-left: 35%;
-    background-color: black;
-    }
-    #boton2{
-        margin-left:35%;
-        background-color: black;
-        
-    }
-    #boton3{
-        margin-left:35%;  
-        background-color: black;
-        
-    }
-    #boton4{
-        margin-left: 35%;
-        background-color: black;
-    } 
-    #moverBeer{
-        margin-left: 0px;
-        padding-left: 100px;
-       
-    }
-    
-    
-    
-
-    #h1-beer{
-        
-        font-size: 50px;
-        
-    }
-    #h1-Nosotros{
-        font-size: 50px;
-    }
-    #h1-delivery{
-        font-size: 50px;
-    }
-    #h1-reserva{
-        font-size: 50px;
-        margin-right: 55px;
-    }
-    #confCerveza{
-        margin-left: 0%;
-        border: solid 5px black;
-        padding-left: 0px;
-        padding-right: 0px;
-        
-    }
-    #tamañoBloqueImgCerveza{
-        width: 95%;
-        
-    }
-   #tamañoVentana{
-       width: 350px;
-       height: 100px;
-   }
-   
-    
-        
-
-
-/*BOTON DE MENU-CARTA DELIVERY*/
-    #estiloBotonMenu{
-        background-color: black;
-        color: blanchedalmond;
-        width: 30vh;
-        padding-left: 0%;
-     }
-     #moverBotonMenu{
-         padding-right: 25%;
-     }
-   
-     
-
-    }
-
-/*MEDIA QUERY GENERAL PARA TABLET*/
-@media (min-width: 600px) and (max-width: 1024px) {
-    
- 
-    #ajusteLogo{
-        border-radius: 50%;
-        display: block;
-        margin-left: 40%;
-        margin-right: auto;
-        width: 150px;
-        height: 150px;
-  }
-
-    #modificarImg1{
-      height: 400px;  
-      width: 1000px; 
-      border: solid 3px black;
-  }
-    
-    #img2{
-      grid-area: img2;
-      /*background-color: tan;*/
-      text-align: center;
-  }
-    #modificarImg2{
-       border: solid 3px black;
-       height: 400px;  
-        width: 1000px; 
-  }
-    #img3{
-      grid-area: img3;
-      /*background-color: yellow;*/
-      text-align: center
-  }
-    #modificarImg3{
-        height: 400px;  
-        width: 1000px;  
-        border: solid 3px black;
-  }
-    #modificarImg4{
-        height: 400px;  
-        width: 1000px;  
-        border: solid 3px black;
-}
-  
-    
-    
-    
-    
-    
-        #video{
-        grid-area: video;
-          width: 600px;
-          height: 600px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          margin-bottom: 100px;
-          background-image: url(../img/Back.jpg);
-      }
-
-
-    #tamañoIndex{
-        height: 125vh;
-    }
-
-    #tamañoNosotros{
-        height: 115vh;
-    }
-        #tamañoTablet{
-        height: 190vh;
-    }
-        #moverBotonMenu{
-        margin-left: 5%;
-    }
-    #estiloBotonMenu{
-        background-color: black;
-        color: blanchedalmond;
-        width: 25vh;
-        padding-left: 0%;
-     }
-        #posicionMapa{
-        margin-top: 3.9%;  
-        width: 400px;
-        
-      }
-
-      #h1-reserva{
-        padding-top: 20%;
-        font-size: 75px;
-        color: white;
-        font-family: 'Teko', sans-serif;
-        padding-right: 72%;
-
-      }
-      #ajusteLogo {
-        border-radius: 50%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        transition: 2s;
-        margin-top: 10%;
-      }
-      #carrousel {
-        grid-area: carrousel;
-        height: 80%;
-        width: 80%;
-        margin-left: 10%; }
-
-       #tamañoTabletDelivery{
-           height: 120vh;
-       }
-       #tamañoTabletRerva{
-           height: 110vh;
-       }
-       #tamañoBeerBurger{
-            height: 220vh;
-       }
-
-
-      
-       .card-title{
-        font-size: 130%;
-        text-align:left;
-
-    }
-        #confCerveza{
-        margin-left: 4%;
-    }
-        #h1-beer{
-        margin-left: 8%;
-    }
-    
-
-    }
-    @media (min-width: 500px) and (max-width: 1023px) {
-    #tamañoCardHamburguesa{
-        width: 13.1rem;
-        }
-    .card-text{
-        font-size: 85%;
-    }
-    #posicionMapa{
-        display: none;
-    }
-    #h1-reserva{
-        font-size: 55px;
-    }
-    #confCerveza{
-        margin-left: 5%;
-    }
-    #h1-beer{
-        margin-left: 10%;
-    }
-    #tamañoTabletRerva{
-        height: 125vh;
-    }
-    #tamañoIndex{
-        height: 135vh;
-    }
-    }
-    @media (width: 768px){
-        #moverBotonMenu{
-            margin-left: 5%;
-        }
-        #estiloBotonMenu{
-            background-color: black;
-            color: blanchedalmond;
-            width: 40vh;
-            padding-left: 0%;
-         }
-    }
-    
-    

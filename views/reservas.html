@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
-    <title>Reservas / Hace tu reservas</title>
+    <title>Reservas / Hace tu reserva</title>
 </head>
 <body id="tamañoTabletRerva">
 <!--MENU DE NAVEGACION, BLOQUE FUERA DE LA GRILLA GRID-->         
@@ -54,6 +54,7 @@
 
 
 <!--TITULO SECCION-->
+<div class="estiloH1Reserva">
 <div class="container">
   <div class="row">
       <div class="col-sm-12">
@@ -61,12 +62,13 @@
       </div>
     </div>  
 </div>
+</div>
 <!--BLOQUE CON FORMAULARIO-->
   <div class="container">
     <div class="row">
       <div class="col-md-6">
         <div class="form_main">
-                  <h4 class="heading"><strong>Datos de </strong> Contacto <span></span></h4>
+                  <h4 class="heading"><strong></strong>Datos de </strong> Contacto <span></span></h4>
               <div class="form">
                   <form action="contact_send_mail.php" method="post" id="contactFrm" name="contactFrm">
                       <input type="text" required="" placeholder="Nombre" value="" name="name" class="txt">
@@ -79,14 +81,16 @@
               </div>
         </div>
       </div>
-<!--BLOQUE DE MAPA-->            
+<!--BLOQUE DE MAPA-->  
+                      
             <div class="col-md-6" id="posicionMapa">
               
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3314087390045!2d-58.708267184238174!3d-34.5451634619103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd0ed5c942d9%3A0x7938068b4556c6ec!2sUrban%20Cervecer%C3%ADa%20Artesanal!5e0!3m2!1ses-419!2sar!4v1623990288163!5m2!1ses-419!2sar" width="600" height="300px" style="border: 5px;" allowfullscreen="" loading="lazy" id="posicionMapa"></iframe>
              
               
             </div>
-    </div>
+    
+        </div>
   </div>
 
        
@@ -96,46 +100,49 @@
            
             
 <!--PIE DE PAGINA-->            
-<footer class="text-center text-white fixed-bottom" style="background-color: black;">
-  <!-- Copyright -->
-  <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright: Bartoletti Alesis.
-    <section class="configRed">
-      <!--Facebook -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
-      <!-- Instagram -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-instagram"></i
-      ></a>
-      
-      <!--Whatsapp-->
-
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-whatsapp"></i
-      ></a>
-
-    </section>
-    
-  </div>
+<footer class="text-center text-white estiloFooterDelivery " style="background-color: black;">
+    <!-- Copyright -->
+    <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright: Bartoletti Alesis.
+      <section class="configRed">
+        <!--Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
   
-</footer>
-
+        
+  
+        
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        
+        <!--Whatsapp-->
+  
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+  
+      </section>
+      
+    </div>
     
-</section>
+  </footer>
+    
+
 <!--FIN DE LA GRILLA GIRD-->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
